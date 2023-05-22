@@ -41,5 +41,18 @@ namespace GastroLabApp.Controllers
                 return BadRequest(ModelState);
             return Ok(receta);
         }
+
+        [HttpGet("Ingrediente/{RecetaId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Ingrediente>))]
+        [ProducesResponseType(400)]
+        public IActionResult GetIngredientesByReceta(int RecetaId)
+        {
+            if (!recetaRepository.RecetaExist(RecetaId))
+                return NotFound();
+            var ingredientes = mapper.Map<List<IngredienteDto>>(recetaRepository.GetIngredientesByReceta(RecetaId));
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            return Ok(ingredientes);
+        }
     }
 }

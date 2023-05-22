@@ -17,7 +17,7 @@ namespace GastroLabApp.Controllers
         }
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Ingrediente>))]
-        public IActionResult GetRecetas()
+        public IActionResult GetIngredientes()
         {
             var ingredientes = ingredienteRepository.GetIngredientes();
             if (!ModelState.IsValid)

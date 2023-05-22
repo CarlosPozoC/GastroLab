@@ -26,6 +26,7 @@ namespace GastroLabApp.Repository
         {
             return context.RecetasIngredientes.Where(re=>re.RecetaId==RecetaId).Select(i=>i.Ingrediente).ToList();
         }
+
         public bool RecetaExist(int RecetaId)
         {
             return context.Recetas.Any(r => r.Id==RecetaId);
