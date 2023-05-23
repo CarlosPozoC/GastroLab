@@ -9,7 +9,11 @@ namespace GastroLabApp.Helper
         public MappingProfiles()
         {
             CreateMap<Receta, RecetaDto>();
+            CreateMap<RecetaDto, Receta>();
             CreateMap<Ingrediente, IngredienteDto>();
+            CreateMap<IngredienteDto, Ingrediente>();
+            CreateMap<Usuario, UsuarioDto>();
+            CreateMap<UsuarioDto, Usuario>();
         }
     }
 }

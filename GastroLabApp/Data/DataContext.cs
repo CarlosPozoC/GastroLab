@@ -16,15 +16,15 @@ namespace GastroLabApp.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<RecetaIngrediente>()
-                .HasKey(ri => new{ri.RecetaId, ri.IngredienteId});
+                .HasKey(ri => new { ri.RecetaId, ri.IngredienteId });
             modelBuilder.Entity<RecetaIngrediente>()
                 .HasOne(r => r.Receta)
                 .WithMany(ri => ri.IngredientesReceta)
-                .HasForeignKey(i => i.IngredienteId);
+                .HasForeignKey(i => i.RecetaId);
             modelBuilder.Entity<RecetaIngrediente>()
                 .HasOne(i => i.Ingrediente)
                 .WithMany(ri => ri.RecetasIngrediente)
-                .HasForeignKey(r => r.RecetaId);
+                .HasForeignKey(r => r.IngredienteId);
         }
     }
 }

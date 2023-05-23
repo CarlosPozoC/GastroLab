@@ -5,7 +5,7 @@
 namespace GastroLabApp.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class CreateAll : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -73,14 +73,14 @@ namespace GastroLabApp.Migrations
                 {
                     table.PrimaryKey("PK_RecetasIngredientes", x => new { x.RecetaId, x.IngredienteId });
                     table.ForeignKey(
-                        name: "FK_RecetasIngredientes_Ingredientes_RecetaId",
-                        column: x => x.RecetaId,
+                        name: "FK_RecetasIngredientes_Ingredientes_IngredienteId",
+                        column: x => x.IngredienteId,
                         principalTable: "Ingredientes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RecetasIngredientes_Recetas_IngredienteId",
-                        column: x => x.IngredienteId,
+                        name: "FK_RecetasIngredientes_Recetas_RecetaId",
+                        column: x => x.RecetaId,
                         principalTable: "Recetas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);

@@ -128,14 +128,14 @@ namespace GastroLabApp.Migrations
 
             modelBuilder.Entity("GastroLabApp.Models.RecetaIngrediente", b =>
                 {
-                    b.HasOne("GastroLabApp.Models.Receta", "Receta")
-                        .WithMany("IngredientesReceta")
+                    b.HasOne("GastroLabApp.Models.Ingrediente", "Ingrediente")
+                        .WithMany("RecetasIngrediente")
                         .HasForeignKey("IngredienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GastroLabApp.Models.Ingrediente", "Ingrediente")
-                        .WithMany("RecetasIngrediente")
+                    b.HasOne("GastroLabApp.Models.Receta", "Receta")
+                        .WithMany("IngredientesReceta")
                         .HasForeignKey("RecetaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

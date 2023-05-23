@@ -1,5 +1,3 @@
-C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\appsettings.Development.json
-C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\appsettings.json
 C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.exe
 C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.deps.json
 C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.runtimeconfig.json
@@ -87,3 +85,4 @@ C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabA
 C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\ref\GastroLabApp.dll
 C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\AutoMapper.dll
 C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\appsettings.json

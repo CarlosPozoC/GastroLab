@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GastroLabApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230521155613_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230523151551_CreateAll")]
+    partial class CreateAll
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -131,14 +131,14 @@ namespace GastroLabApp.Migrations
 
             modelBuilder.Entity("GastroLabApp.Models.RecetaIngrediente", b =>
                 {
-                    b.HasOne("GastroLabApp.Models.Receta", "Receta")
-                        .WithMany("IngredientesReceta")
+                    b.HasOne("GastroLabApp.Models.Ingrediente", "Ingrediente")
+                        .WithMany("RecetasIngrediente")
                         .HasForeignKey("IngredienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GastroLabApp.Models.Ingrediente", "Ingrediente")
-                        .WithMany("RecetasIngrediente")
+                    b.HasOne("GastroLabApp.Models.Receta", "Receta")
+                        .WithMany("IngredientesReceta")
                         .HasForeignKey("RecetaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

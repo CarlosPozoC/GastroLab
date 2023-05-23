@@ -21,5 +21,27 @@ namespace GastroLabApp.Repository
         {
             return context.Usuarios.Where(u => u.Id == UsuarioId).FirstOrDefault();
         }
+
+        public bool UpdateUsuario(Usuario usuario)
+        {
+            context.Update(usuario);
+            return Save();
+        }
+        public bool UsuarioExist(int UsuarioId)
+        {
+            return context.Usuarios.Any(r => r.Id == UsuarioId);
+        }
+
+        public bool Save()
+        {
+            var saved = context.SaveChanges();
+            return saved > 0 ? true : false;
+        }
+
+        bool IUsuarioRepository.CreateUsuario(Usuario usuario)
+        {
+            context.Add(usuario);
+            return Save();
+        }
     }
 }
