@@ -32,6 +32,11 @@ namespace GastroLabApp.Repository
             context.Add(ingrediente);
             return Save();
         }
+        bool IIngredienteRepository.DeleteIngrediente(Ingrediente ingrediente)
+        {
+            context.Remove(ingrediente);
+            return Save();
+        }
         public bool IngredienteExist(int IngredienteId)
         {
             return context.Ingredientes.Any(r => r.Id == IngredienteId);

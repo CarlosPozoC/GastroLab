@@ -9,6 +9,7 @@ namespace GastroLabApp.Interfaces
         bool UpdateIngrediente(Ingrediente ingrediente);
         bool CreateIngrediente(Ingrediente ingrediente);
         bool IngredienteExist(int IngredienteId);
+        bool DeleteIngrediente(Ingrediente ingrediente);
         bool Save();
     }
 }

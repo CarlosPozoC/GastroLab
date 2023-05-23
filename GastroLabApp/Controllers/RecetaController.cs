@@ -104,6 +104,6 @@ namespace GastroLabApp.Controllers
                 return StatusCode(500, ModelState);
             }
             return Ok("La receta ha sido creada correctamente");
-        }
+        } 
     }
 }

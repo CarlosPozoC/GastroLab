@@ -89,5 +89,22 @@ namespace GastroLabApp.Controllers
             }
             return Ok("El ingrediente ha sido creada correctamente");
         }
+
+        [HttpDelete("{IngredienteId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        public IActionResult DeleteIngrediente(int IngredienteId)
+        {
+            if (!ingredienteRepository.IngredienteExist(IngredienteId))
+                return NotFound();
+            var IngredienteABorrar = ingredienteRepository.GetIngrediente(IngredienteId);
+            if (!ingredienteRepository.DeleteIngrediente(IngredienteABorrar))
+            {
+                ModelState.AddModelError("", "Algo a ido mal borrando el ingrediente");
+                return StatusCode(500, ModelState);
+            }
+            return NoContent();
+        }
     }
 }
