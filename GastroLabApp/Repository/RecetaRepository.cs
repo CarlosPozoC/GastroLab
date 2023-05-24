@@ -1,6 +1,7 @@
 ﻿using GastroLabApp.Data;
 using GastroLabApp.Interfaces;
 using GastroLabApp.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace GastroLabApp.Repository
@@ -26,6 +27,11 @@ namespace GastroLabApp.Repository
         public ICollection<Ingrediente> GetIngredientesByReceta(int RecetaId)
         {
             return context.RecetasIngredientes.Where(re=>re.RecetaId==RecetaId).Select(i=>i.Ingrediente).ToList();
+        }
+
+        public ICollection<Opinion> GetOpinionesByReceta(int RecetaId)
+        {
+            return context.Opiniones.Where(re => re.receta.Id == RecetaId).ToList();
         }
 
         public bool UpdateReceta(Receta receta)

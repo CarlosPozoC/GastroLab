@@ -5,7 +5,7 @@
 namespace GastroLabApp.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateAll : Migration
+    public partial class Initiation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -63,6 +63,34 @@ namespace GastroLabApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Opiniones",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Mensaje = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    recetaId = table.Column<int>(type: "int", nullable: false),
+                    usuarioId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Opiniones", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Opiniones_Recetas_recetaId",
+                        column: x => x.recetaId,
+                        principalTable: "Recetas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
+                    table.ForeignKey(
+                        name: "FK_Opiniones_Usuarios_usuarioId",
+                        column: x => x.usuarioId,
+                        principalTable: "Usuarios",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "RecetasIngredientes",
                 columns: table => new
                 {
@@ -87,6 +115,16 @@ namespace GastroLabApp.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Opiniones_recetaId",
+                table: "Opiniones",
+                column: "recetaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Opiniones_usuarioId",
+                table: "Opiniones",
+                column: "usuarioId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Recetas_UsuarioId",
                 table: "Recetas",
                 column: "UsuarioId");
@@ -100,6 +138,9 @@ namespace GastroLabApp.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Opiniones");
+
             migrationBuilder.DropTable(
                 name: "RecetasIngredientes");
 

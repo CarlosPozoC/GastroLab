@@ -45,6 +45,37 @@ namespace GastroLabApp.Migrations
                     b.ToTable("Ingredientes");
                 });
 
+            modelBuilder.Entity("GastroLabApp.Models.Opinion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Mensaje")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("recetaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("usuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("recetaId");
+
+                    b.HasIndex("usuarioId");
+
+                    b.ToTable("Opiniones");
+                });
+
             modelBuilder.Entity("GastroLabApp.Models.Receta", b =>
                 {
                     b.Property<int>("Id")
@@ -115,6 +146,25 @@ namespace GastroLabApp.Migrations
                     b.ToTable("Usuarios");
                 });
 
+            modelBuilder.Entity("GastroLabApp.Models.Opinion", b =>
+                {
+                    b.HasOne("GastroLabApp.Models.Receta", "receta")
+                        .WithMany("Opiniones")
+                        .HasForeignKey("recetaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GastroLabApp.Models.Usuario", "usuario")
+                        .WithMany("Opiniones")
+                        .HasForeignKey("usuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("receta");
+
+                    b.Navigation("usuario");
+                });
+
             modelBuilder.Entity("GastroLabApp.Models.Receta", b =>
                 {
                     b.HasOne("GastroLabApp.Models.Usuario", "Usuario")
@@ -153,10 +203,14 @@ namespace GastroLabApp.Migrations
             modelBuilder.Entity("GastroLabApp.Models.Receta", b =>
                 {
                     b.Navigation("IngredientesReceta");
+
+                    b.Navigation("Opiniones");
                 });
 
             modelBuilder.Entity("GastroLabApp.Models.Usuario", b =>
                 {
+                    b.Navigation("Opiniones");
+
                     b.Navigation("Recetas");
                 });
 #pragma warning restore 612, 618

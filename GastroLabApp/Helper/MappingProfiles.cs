@@ -14,6 +14,8 @@ namespace GastroLabApp.Helper
             CreateMap<IngredienteDto, Ingrediente>();
             CreateMap<Usuario, UsuarioDto>();
             CreateMap<UsuarioDto, Usuario>();
+            CreateMap<Opinion, OpinionDto>();
+            CreateMap<OpinionDto, Opinion>();
         }
     }
 }

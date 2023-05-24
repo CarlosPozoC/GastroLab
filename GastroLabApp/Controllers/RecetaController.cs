@@ -44,7 +44,7 @@ namespace GastroLabApp.Controllers
             return Ok(receta);
         }
 
-        [HttpGet("Ingrediente/{RecetaId}")]
+        [HttpGet("Ingredientes/{RecetaId}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Ingrediente>))]
         [ProducesResponseType(400)]
         public IActionResult GetIngredientesByReceta(int RecetaId)
@@ -55,6 +55,19 @@ namespace GastroLabApp.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             return Ok(ingredientes);
+        }
+
+        [HttpGet("Opiniones/{RecetaId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Opinion>))]
+        [ProducesResponseType(400)]
+        public IActionResult GetOpinionesByReceta(int RecetaId)
+        {
+            if (!recetaRepository.RecetaExist(RecetaId))
+                return NotFound();
+            var opiniones = mapper.Map<List<OpinionDto>>(recetaRepository.GetOpinionesByReceta(RecetaId));
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            return Ok(opiniones);
         }
 
         [HttpPut("{RecetaId}")]

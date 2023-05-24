@@ -11,6 +11,7 @@ namespace GastroLabApp.Data
         public DbSet<Ingrediente> Ingredientes { get; set; }
         public DbSet<Receta> Recetas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Opinion> Opiniones { get; set; }
         public DbSet<RecetaIngrediente> RecetasIngredientes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
