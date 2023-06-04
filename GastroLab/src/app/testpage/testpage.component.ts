@@ -11,9 +11,15 @@ export class TestpageComponent implements OnInit {
 
   constructor(private apiservice: apiservice) {}
 
-  ngOnInit() {
-    this.apiservice.obtenerDatosDeRecetas().subscribe((data) => {
-      this.datos = data;
-    });
+  ngOnInit(): void {
+    this.apiservice.obtenerDatosDeRecetas().subscribe(
+      (data) => {
+        this.datos = data;
+        console.log(data)
+      },
+      (error) => {
+        console.error('Error al obtener los datos:', error);
+      }
+    );
   }
 }

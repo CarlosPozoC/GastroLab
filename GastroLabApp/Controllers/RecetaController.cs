@@ -23,11 +23,13 @@ namespace GastroLabApp.Controllers
         }
         [HttpGet]
         [ProducesResponseType(200, Type=typeof(IEnumerable<Receta>))]
+
         public IActionResult GetRecetas() 
         {
             var recetas= mapper.Map<List<RecetaDto>>(recetaRepository.GetRecetas());
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+            
             return Ok(recetas); 
         }
 

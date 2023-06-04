@@ -1,2 +1,10 @@
 <div *ngIf="datos">
   <h2>Datos de la API:</h2>
+  <ul *ngFor="let item of datos">
+    <li>{{ item.id }}</li>
+    <li>{{ item.nombre }}</li>
+    <li>{{ item.descripcion }}</li>
+    <li>{{ item.tipo }}</li>
+  </ul>
+</div>
+

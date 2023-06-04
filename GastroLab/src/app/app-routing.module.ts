@@ -7,10 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 // Importa otros componentes si tienes más rutas
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirecciona al componente de inicio
-  { path: 'home', component: AppComponent }, // Ruta para el componente NombreComponenteComponent
-  // Agrega más rutas aquí si es necesario
-  { path: '**', redirectTo: '/home' } // Ruta por defecto en caso de no encontrar ninguna ruta válida
+  { path: '', component: AppComponent }, // Ruta para el componente NombreComponenteComponent
+  { path: '**', redirectTo: '/' } // Ruta por defecto en caso de no encontrar ninguna ruta válida
 ];
 
 @NgModule({
