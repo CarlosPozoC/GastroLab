@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Grado Superior\\SEGUNDO\\VISUAL STUDIO\\GastroLabApp\\GastroLabApp.csproj": {}
+    "C:\\Users\\cpozo\\OneDrive\\Escritorio\\TFG\\GastroLab\\GastroLabApp\\GastroLabApp.csproj": {}
   },
   "projects": {
-    "C:\\Grado Superior\\SEGUNDO\\VISUAL STUDIO\\GastroLabApp\\GastroLabApp.csproj": {
+    "C:\\Users\\cpozo\\OneDrive\\Escritorio\\TFG\\GastroLab\\GastroLabApp\\GastroLabApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Grado Superior\\SEGUNDO\\VISUAL STUDIO\\GastroLabApp\\GastroLabApp.csproj",
+        "projectUniqueName": "C:\\Users\\cpozo\\OneDrive\\Escritorio\\TFG\\GastroLab\\GastroLabApp\\GastroLabApp.csproj",
         "projectName": "GastroLabApp",
-        "projectPath": "C:\\Grado Superior\\SEGUNDO\\VISUAL STUDIO\\GastroLabApp\\GastroLabApp.csproj",
+        "projectPath": "C:\\Users\\cpozo\\OneDrive\\Escritorio\\TFG\\GastroLab\\GastroLabApp\\GastroLabApp.csproj",
         "packagesPath": "C:\\Users\\cpozo\\.nuget\\packages\\",
-        "outputPath": "C:\\Grado Superior\\SEGUNDO\\VISUAL STUDIO\\GastroLabApp\\obj\\",
+        "outputPath": "C:\\Users\\cpozo\\OneDrive\\Escritorio\\TFG\\GastroLab\\GastroLabApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cpozo\\AppData\\Roaming\\NuGet\\NuGet.Config",

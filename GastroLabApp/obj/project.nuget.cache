@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v3YMOg1NdqxCl9Hb2Kn9ruLVTvXy1p/wZON58ClMVGZ4XVVIei+ET5UwKxa9k9ulrCatoOjuBmC2JSk6ObCbMw==",
+  "dgSpecHash": "P4DlTtwMB9wv06mmWSc8GRD44pN3EN0+sBlzwSpdHm3Fy/msLM2gdnBXxnb455X7sN/alRbz91P69D2pDsZhqw==",
   "success": true,
-  "projectFilePath": "C:\\Grado Superior\\SEGUNDO\\VISUAL STUDIO\\GastroLabApp\\GastroLabApp.csproj",
+  "projectFilePath": "C:\\Users\\cpozo\\OneDrive\\Escritorio\\TFG\\GastroLab\\GastroLabApp\\GastroLabApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cpozo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\cpozo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
