@@ -1,0 +1,20 @@
+<div class="container" style="margin-top: 30px; background-color: #F2F2F2;">
+  <h2>Registro de Usuario</h2>
+  <form (ngSubmit)="registrarUsuario(f)" #f="ngForm">
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre" ngModel required>
+    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" ngModel required minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,20}$"
+      #contrasenaInput="ngModel">
+    <div *ngIf="contrasenaInput.invalid && (contrasenaInput.dirty || contrasenaInput.touched)">
+      <div *ngIf="contrasenaInput.hasError('required')" class="alert alert-danger">La contraseña es requerida.</div>
+      <div *ngIf="contrasenaInput.hasError('minlength')" class="alert alert-danger">La contraseña debe tener al menos 8 caracteres.</div>
+      <div *ngIf="contrasenaInput.hasError('maxlength')" class="alert alert-danger">La contraseña no puede tener más de 20 caracteres.</div>
+      <div *ngIf="contrasenaInput.hasError('pattern')" class="alert alert-danger">La contraseña debe incluir al menos una mayúscula, una minúscula y un número.</div>
+    </div>
+    <input type="text" id="sexo" name="sexo" placeholder="Sexo" ngModel required pattern="^(Masculino|Femenino)$">
+    <div *ngIf="f.controls['sexo'].invalid && (f.controls['sexo'].dirty || f.controls['sexo'].touched)">
+      <div *ngIf="f.controls['sexo'].hasError('required')" class="alert alert-danger">El campo sexo es requerido.</div>
+      <div *ngIf="f.controls['sexo'].hasError('pattern')" class="alert alert-danger">El valor del campo sexo debe ser 'Masculino' o 'Femenino'.</div>
+    </div>
+    <button type="submit" [disabled]="f.invalid || contrasenaInput.invalid">Registrar</button>
+  </form>
+</div>
