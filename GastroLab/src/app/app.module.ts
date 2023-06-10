@@ -7,6 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
+
 // Importa otros componentes si es necesario
 
 @NgModule({
@@ -14,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     TestpageComponent,
     RegisterComponent,
+    LoginComponent,
     // Agrega otros componentes aquí si es necesario
   ],
   imports: [
@@ -21,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule // Asegúrate de que AppRoutingModule esté importado aquí
+    ReactiveFormsModule,
+    RouterModule    // Asegúrate de que AppRoutingModule esté importado aquí
   ],
   providers: [],
   bootstrap: [AppComponent]

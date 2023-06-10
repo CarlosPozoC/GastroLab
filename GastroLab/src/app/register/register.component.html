@@ -10,11 +10,14 @@
       <div *ngIf="contrasenaInput.hasError('maxlength')" class="alert alert-danger">La contraseña no puede tener más de 20 caracteres.</div>
       <div *ngIf="contrasenaInput.hasError('pattern')" class="alert alert-danger">La contraseña debe incluir al menos una mayúscula, una minúscula y un número.</div>
     </div>
-    <input type="text" id="sexo" name="sexo" placeholder="Sexo" ngModel required pattern="^(Masculino|Femenino)$">
-    <div *ngIf="f.controls['sexo'].invalid && (f.controls['sexo'].dirty || f.controls['sexo'].touched)">
-      <div *ngIf="f.controls['sexo'].hasError('required')" class="alert alert-danger">El campo sexo es requerido.</div>
-      <div *ngIf="f.controls['sexo'].hasError('pattern')" class="alert alert-danger">El valor del campo sexo debe ser 'Masculino' o 'Femenino'.</div>
-    </div>
+    <select id="sexo" name="sexo" placeholder="Sexo" ngModel required style="margin-bottom: 20px">
+      <option value=""> Sexo </option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+    </select>
     <button type="submit" [disabled]="f.invalid || contrasenaInput.invalid">Registrar</button>
   </form>
+  <div class="login-link">
+    ¿Ya estás registrado? <a routerLink="/login">Inicia sesión desde aquí</a>
+  </div>
 </div>

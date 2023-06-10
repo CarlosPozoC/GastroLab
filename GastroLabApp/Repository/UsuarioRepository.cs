@@ -32,6 +32,7 @@ namespace GastroLabApp.Repository
             return context.Usuarios.Any(r => r.Id == UsuarioId);
         }
 
+
         public bool Save()
         {
             var saved = context.SaveChanges();

@@ -36,10 +36,10 @@ namespace GastroLabApp.Controllers
         {
             if (!usuarioRepository.UsuarioExist(UsuarioId))
                 return NotFound();
-            var receta = mapper.Map<UsuarioDto>(usuarioRepository.GetUsuario(UsuarioId));
+            var usuario = mapper.Map<UsuarioDto>(usuarioRepository.GetUsuario(UsuarioId));
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            return Ok(receta);
+            return Ok(usuario);
         }
 
         [HttpPut("{UsuarioId}")]

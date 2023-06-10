@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { hashSync } from 'bcryptjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +19,7 @@ export class RegisterComponent {
 
   contrasenaValida = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   registrarUsuario(form: NgForm) {
     if (form.invalid) {
@@ -36,6 +37,7 @@ export class RegisterComponent {
     this.http.post('https://localhost:7271/api/Usuario', usuario).subscribe(
       response => {
         console.log(response);
+        this.router.navigate(['/login']); // Redirige al componente 'login'
       },
       error => {
         console.log(error);

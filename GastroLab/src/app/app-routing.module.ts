@@ -1,14 +1,13 @@
 import { TestpageComponent } from './testpage/testpage.component';
-import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-
-// Importa otros componentes si tienes más rutas
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent }, // Ruta para el componente NombreComponenteComponent
-  { path: '**', redirectTo: '/' } // Ruta por defecto en caso de no encontrar ninguna ruta válida
+  { path: '', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'test-page', component: TestpageComponent }
 ];
 
 @NgModule({
@@ -16,3 +15,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
