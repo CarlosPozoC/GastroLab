@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-import { compareSync, hashSync } from 'bcryptjs';
+import { apiservice } from '../apiservice.service';
+import { compareSync } from 'bcryptjs';
 import { Router } from '@angular/router';
 
 interface Usuario {
@@ -17,7 +17,7 @@ interface Usuario {
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private apiservice: apiservice, private router: Router) {}
 
   async loginUsuario(form: NgForm) {
     if (form.invalid) {
@@ -28,16 +28,17 @@ export class LoginComponent {
     const contraseña = form.value.contrasena;
 
     try {
-      const response = await this.http.get<Usuario[]>('https://localhost:7271/api/usuario').toPromise();
-      const usuarios: Usuario[] = response || [];
-      // Manejar el caso en que la respuesta sea undefined
+      const usuarios = await this.apiservice.obtenerUsuarios().toPromise() as Usuario[];
       const usuario = usuarios.find(u => u.nombre === nombre);
 
       if (usuario) {
         const contraseñaEncriptada: string = usuario.contrasena;
 
         if (compareSync(contraseña, contraseñaEncriptada)) {
-          // Contraseña correcta, redirigir al componente TestpageComponent
+          // Contraseña correcta, almacenar información del usuario logeado
+          this.storeLoggedInUser(usuario);
+
+          // Redirigir al componente TestpageComponent
           this.router.navigate(['/test-page']);
         } else {
           // Contraseña incorrecta
@@ -50,5 +51,10 @@ export class LoginComponent {
     } catch (error) {
       console.log(error);
     }
+  }
+
+  private storeLoggedInUser(user: Usuario): void {
+    // Almacena la información del usuario logeado en el localStorage
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
   }
 }

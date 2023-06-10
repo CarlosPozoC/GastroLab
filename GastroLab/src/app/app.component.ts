@@ -9,7 +9,7 @@ import { apiservice } from './apiservice.service';
 export class AppComponent {
   title = 'GastroLab';
 
-  constructor(private apiService: apiservice) {
+  constructor(private apiservice: apiservice) {
     // Puedes utilizar el servicio aquí
   }
 }

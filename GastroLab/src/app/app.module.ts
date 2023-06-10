@@ -9,6 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RecetasComponent } from './recetas/recetas.component';
+import { IngredientesComponent } from './ingredientes/ingredientes.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 // Importa otros componentes si es necesario
 
@@ -18,6 +22,10 @@ import { RouterModule } from '@angular/router';
     TestpageComponent,
     RegisterComponent,
     LoginComponent,
+    NavbarComponent,
+    RecetasComponent,
+    IngredientesComponent,
+    PerfilComponent,
     // Agrega otros componentes aquí si es necesario
   ],
   imports: [

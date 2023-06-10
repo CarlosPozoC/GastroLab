@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { NgForm, FormControl, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-import { hashSync } from 'bcryptjs';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { apiservice } from '../apiservice.service';
 import { Router } from '@angular/router';
-
+import { NgForm } from '@angular/forms';
+import { hashSync } from 'bcryptjs';
+interface Usuario {
+  id: number;
+  nombre: string;
+  contrasena: string;
+  sexo: string;
+}
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent {
+export class RegisterComponent implements OnInit {
   contrasenaControl = new FormControl('', [
     Validators.required,
     Validators.minLength(8),
@@ -19,7 +25,9 @@ export class RegisterComponent {
 
   contrasenaValida = false;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private apiservice: apiservice, private router: Router) {}
+
+  ngOnInit(): void {}
 
   registrarUsuario(form: NgForm) {
     if (form.invalid) {
@@ -28,13 +36,14 @@ export class RegisterComponent {
 
     const contraseñaEncriptada = hashSync(form.value.contrasena, 10);
 
-    const usuario = {
+    const usuario: Usuario = {
+      id: 0, // El ID será asignado por el servidor al crear el usuario
       nombre: form.value.nombre,
       contrasena: contraseñaEncriptada,
       sexo: form.value.sexo
     };
 
-    this.http.post('https://localhost:7271/api/Usuario', usuario).subscribe(
+    this.apiservice.crearUsuario(usuario).subscribe(
       response => {
         console.log(response);
         this.router.navigate(['/login']); // Redirige al componente 'login'
