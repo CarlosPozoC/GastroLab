@@ -1,1 +1,39 @@
-<p>ingredientes works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+  <h2 class="ingredientes-title">Ingredientes</h2>
+
+  <button class="btn-create" (click)="abrirPestanaCreacion()">Crear Ingrediente</button>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let ingrediente of ingredientes">
+      <h3>{{ ingrediente.nombre }}</h3>
+      <p>Tipo: {{ ingrediente.tipo }}</p>
+      <p>Calorías: {{ ingrediente.calorias }}</p>
+    </div>
+  </div>
+
+  <div class="creacion-overlay" *ngIf="mostrarPestanaCreacion">
+    <div class="creacion-modal">
+      <h3>Crear Ingrediente</h3>
+      <form (ngSubmit)="crearIngrediente(form)" #form="ngForm">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" name="tipo" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="calorias">Calorías:</label>
+          <input type="number" id="calorias" name="calorias" ngModel required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Crear</button>
+          <button type="button" (click)="cerrarPestanaCreacion()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

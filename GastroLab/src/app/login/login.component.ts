@@ -3,13 +3,7 @@ import { NgForm } from '@angular/forms';
 import { apiservice } from '../apiservice.service';
 import { compareSync } from 'bcryptjs';
 import { Router } from '@angular/router';
-
-interface Usuario {
-  id: number;
-  nombre: string;
-  contrasena: string;
-  sexo: string;
-}
+import { Usuario } from '../interfaces/usuario.interface';
 
 @Component({
   selector: 'app-login',

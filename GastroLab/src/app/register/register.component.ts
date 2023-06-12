@@ -4,12 +4,8 @@ import { apiservice } from '../apiservice.service';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { hashSync } from 'bcryptjs';
-interface Usuario {
-  id: number;
-  nombre: string;
-  contrasena: string;
-  sexo: string;
-}
+import { Usuario } from '../interfaces/usuario.interface';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',

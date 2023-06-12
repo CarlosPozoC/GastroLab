@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-interface Usuario {
-  id: number;
-  nombre: string;
-  contrasena: string;
-  sexo: string;
-}
+import { Usuario } from '../interfaces/usuario.interface';
 
 @Component({
   selector: 'app-perfil',

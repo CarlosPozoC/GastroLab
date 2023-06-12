@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Usuario } from './interfaces/usuario.interface';
+import { Receta } from './interfaces/receta.interface';
+import { Ingrediente } from './interfaces/ingrediente.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -21,18 +24,26 @@ export class apiservice {
   obtenerRecetas(): Observable<Receta[]> {
     return this.http.get<Receta[]>(`${this.apiUrl}/Receta`);
   }
-}
 
-interface Usuario {
-  id: number;
-  nombre: string;
-  contrasena: string;
-  sexo: string;
-}
+  obtenerIngredientes(): Observable<Ingrediente[]> {
+    return this.http.get<Ingrediente[]>(`${this.apiUrl}/Ingrediente`);
+  }
 
-interface Receta {
-  id: number;
-  nombre: string;
-  descripcion: string;
-  tipo: string;
+  crearIngrediente(ingrediente: Ingrediente): Observable<any> {
+    return this.http.post(`${this.apiUrl}/Ingrediente`, ingrediente);
+  }
+
+  crearReceta(receta: Receta): Observable<any> {
+    const url = `${this.apiUrl}/Receta`; // Reemplaza con la URL correcta de tu API
+
+    const params = {
+      UsuarioId: receta.usuarioId,
+      IngredienteId: receta.ingredientes,
+    };
+
+    const body = receta;
+
+    return this.http.post(url, body, { params });
+  }
+
 }
