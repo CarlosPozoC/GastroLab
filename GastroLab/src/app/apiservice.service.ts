@@ -34,16 +34,22 @@ export class apiservice {
   }
 
   crearReceta(receta: Receta): Observable<any> {
-    const url = `${this.apiUrl}/Receta`; // Reemplaza con la URL correcta de tu API
+    const url = `${this.apiUrl}/Receta`;
 
     const params = {
-      UsuarioId: receta.usuarioId,
-      IngredienteId: receta.ingredientes,
+      UsuarioId: receta.usuarioId.toString(),
+      IngredienteId: receta.ingredientes.map(id => id.toString()),
     };
 
-    const body = receta;
+    const body = {
+      nombre: receta.nombre,
+      descripcion: receta.descripcion,
+      tipo: receta.tipo,
+      url: receta.url
+    };
 
     return this.http.post(url, body, { params });
   }
+
 
 }

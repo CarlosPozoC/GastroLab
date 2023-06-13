@@ -52,6 +52,11 @@ export class RecetasComponent implements OnInit {
     );
   }
 
+  obtenerNombreIngrediente(ingredienteId: number): string {
+    const ingrediente = this.ingredientes.find(ingrediente => ingrediente.id === ingredienteId);
+    return ingrediente ? ingrediente.nombre:'';
+  }
+
   abrirPestanaCreacion(): void {
     this.mostrarPestanaCreacion = true;
   }
@@ -77,6 +82,8 @@ export class RecetasComponent implements OnInit {
 
       this.apiservice.crearReceta(nuevaReceta).subscribe();
       this.cerrarPestanaCreacion();
+      this.obtenerRecetas();
+      location.reload();
       this.obtenerRecetas();
       location.reload();
     }

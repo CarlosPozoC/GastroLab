@@ -49,6 +49,8 @@ export class IngredientesComponent implements OnInit {
       this.cerrarPestanaCreacion();
       this.obtenerIngredientes();
       location.reload();
+      this.obtenerIngredientes();
+      location.reload();
     }
   }
 }
