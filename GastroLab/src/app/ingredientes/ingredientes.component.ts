@@ -42,12 +42,13 @@ export class IngredientesComponent implements OnInit {
       const nuevoIngrediente: any = {
         nombre: form.value.nombre,
         tipo: form.value.tipo,
-        calorias: form.value.calorias
+        calorias: form.value.calorias,
+        url: form.value.url
       };
-
       this.apiservice.crearIngrediente(nuevoIngrediente).subscribe()
       this.cerrarPestanaCreacion();
       this.obtenerIngredientes();
+      location.reload();
     }
   }
 }

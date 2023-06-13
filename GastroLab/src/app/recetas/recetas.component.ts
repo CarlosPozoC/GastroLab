@@ -70,21 +70,15 @@ export class RecetasComponent implements OnInit {
         nombre: form.value.nombre,
         descripcion: form.value.descripcion,
         tipo: form.value.tipo,
+        url: form.value.url,
         usuarioId: this.usuario?.id || 0,
         ingredientes: ingredientesIds
       };
 
-      this.apiservice.crearReceta(nuevaReceta).subscribe(
-        (data: any) => {
-          console.log('Receta creada exitosamente:', data);
-          this.cerrarPestanaCreacion();
-          this.obtenerRecetas();
-          location.reload(); // Recargar la página para ver la nueva receta
-        },
-        (error: any) => {
-          console.error('Error al crear la receta:', error);
-        }
-      );
+      this.apiservice.crearReceta(nuevaReceta).subscribe();
+      this.cerrarPestanaCreacion();
+      this.obtenerRecetas();
+      location.reload();
     }
   }
 }

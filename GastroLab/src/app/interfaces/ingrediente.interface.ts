@@ -4,5 +4,5 @@ export interface Ingrediente {
   nombre: string;
   tipo: string;
   calorias: number;
-
+  url:string;
 }

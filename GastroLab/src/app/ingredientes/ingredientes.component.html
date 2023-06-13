@@ -10,6 +10,7 @@
       <h3>{{ ingrediente.nombre }}</h3>
       <p>Tipo: {{ ingrediente.tipo }}</p>
       <p>Calorías: {{ ingrediente.calorias }}</p>
+      <img [src]=ingrediente.url>
     </div>
   </div>
 
@@ -28,6 +29,10 @@
         <div class="form-group">
           <label for="calorias">Calorías:</label>
           <input type="number" id="calorias" name="calorias" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="text" id="url" name="url" ngModel required>
         </div>
         <div class="form-group">
           <button type="submit">Crear</button>

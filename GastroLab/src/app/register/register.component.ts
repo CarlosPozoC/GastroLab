@@ -32,8 +32,7 @@ export class RegisterComponent implements OnInit {
 
     const contraseñaEncriptada = hashSync(form.value.contrasena, 10);
 
-    const usuario: Usuario = {
-      id: 0, // El ID será asignado por el servidor al crear el usuario
+    const usuario: any = {
       nombre: form.value.nombre,
       contrasena: contraseñaEncriptada,
       sexo: form.value.sexo
@@ -42,12 +41,12 @@ export class RegisterComponent implements OnInit {
     this.apiservice.crearUsuario(usuario).subscribe(
       response => {
         console.log(response);
-        this.router.navigate(['/login']); // Redirige al componente 'login'
       },
       error => {
         console.log(error);
       }
     );
+    this.router.navigate(['/login']);
   }
 
   validarContrasena() {
