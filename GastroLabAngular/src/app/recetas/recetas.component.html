@@ -1,0 +1,62 @@
+<style>
+  .card {
+    text-decoration: none;
+  }
+
+  .card.no-underline {
+    text-decoration: none !important;
+  }
+</style>
+
+<app-navbar></app-navbar>
+
+<div class="container">
+  <h2>Recetas</h2>
+
+  <button class="btn-create" (click)="abrirPestanaCreacion()">Crear Receta</button>
+
+  <div class="card-container">
+    <div class="card no-underline" *ngFor="let receta of recetas" [routerLink]="'/recetas/' + receta.id">
+      <h3>{{ receta.nombre }}</h3>
+      <p>Tipo: {{ receta.tipo }}</p>
+      <p>Descripción: {{ receta.descripcion }}</p>
+      <img [src]="receta.url">
+    </div>
+  </div>
+  <div class="creacion-overlay" *ngIf="mostrarPestanaCreacion">
+    <div class="creacion-modal">
+      <h3>Crear Receta</h3>
+      <form (ngSubmit)="crearReceta(form)" #form="ngForm">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" name="tipo" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripción:</label>
+          <textarea id="descripcion" name="descripcion" ngModel required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="text" id="url" name="url" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="ingredientes">Ingredientes:</label>
+          <div *ngFor="let ingrediente of ingredientes">
+            <label>
+              <input type="checkbox" [name]="ingrediente.id.toString()" [ngModel]="false">
+              {{ ingrediente.nombre }}
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Crear</button>
+          <button type="button" (click)="cerrarPestanaCreacion()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

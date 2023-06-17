@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="container" *ngIf="receta">
+  <div class="receta">
+    <h2>{{ receta.nombre }}</h2>
+    <p>Tipo: {{ receta.tipo }}</p>
+    <p>Descripción: {{ receta.descripcion }}</p>
+    <img [src]="receta.url" alt="Imagen de la receta">
+  </div>
+  <h3>Ingredientes:</h3>
+  <ul>
+    <li *ngFor="let ingrediente of ingredientes" class="ingrediente-item">
+      <div class="ingrediente-info">
+        <p><strong>Nombre:</strong> {{ ingrediente.nombre }}</p>
+        <p><strong>Tipo:</strong> {{ ingrediente.tipo }}</p>
+        <p><strong>Calorías:</strong> {{ ingrediente.calorias }}</p>
+      </div>
+      <div class="ingrediente-imagen">
+        <img [src]="ingrediente.url" alt="Imagen del ingrediente">
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="container opiniones-container">
+  <h3>Opiniones:</h3>
+  <ul>
+    <li *ngFor="let opinion of opiniones" class="opinion-item">
+      <div class="opinion-info">
+        <p><strong>Título:</strong> {{ opinion.titulo }}</p>
+        <p><strong>Mensaje:</strong> {{ opinion.mensaje }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
