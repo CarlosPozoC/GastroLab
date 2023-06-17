@@ -77,15 +77,12 @@ export class RecetasComponent implements OnInit {
         tipo: form.value.tipo,
         url: form.value.url,
         usuarioId: this.usuario?.id || 0,
-        ingredientes: ingredientesIds
+        ingredientesreceta: ingredientesIds
       };
 
       this.apiservice.crearReceta(nuevaReceta).subscribe();
       this.cerrarPestanaCreacion();
       this.obtenerRecetas();
-      location.reload();
-      this.obtenerRecetas();
-      location.reload();
     }
   }
 }

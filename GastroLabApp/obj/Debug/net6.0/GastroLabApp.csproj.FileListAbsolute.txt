@@ -1,0 +1,264 @@
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.exe
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.deps.json
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.runtimeconfig.json
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\GastroLabApp.pdb
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Azure.Core.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Azure.Identity.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Humanizer.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.CodeDom.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Text.Json.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.csproj.AssemblyReference.cache
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.AssemblyInfoInputs.cache
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.AssemblyInfo.cs
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.csproj.CoreCompileInputs.cache
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.GastroLabApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.build.GastroLabApp.props
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GastroLabApp.props
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GastroLabApp.props
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\scopedcss\bundle\GastroLabApp.styles.css
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.csproj.CopyComplete
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\refint\GastroLabApp.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.pdb
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\GastroLabApp.genruntimeconfig.cache
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\obj\Debug\net6.0\ref\GastroLabApp.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Grado Superior\SEGUNDO\VISUAL STUDIO\GastroLabApp\bin\Debug\net6.0\appsettings.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\appsettings.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\GastroLabApp.exe
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\GastroLabApp.deps.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\GastroLabApp.runtimeconfig.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\GastroLabApp.pdb
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.csproj.AssemblyReference.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.AssemblyInfoInputs.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.AssemblyInfo.cs
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.csproj.CoreCompileInputs.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.GastroLabApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.build.GastroLabApp.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GastroLabApp.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GastroLabApp.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\scopedcss\bundle\GastroLabApp.styles.css
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.csproj.CopyComplete
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\refint\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.pdb
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\GastroLabApp.genruntimeconfig.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLabApp\obj\Debug\net6.0\ref\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\appsettings.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\GastroLabApp.exe
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\GastroLabApp.deps.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\GastroLabApp.runtimeconfig.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\GastroLabApp.pdb
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Humanizer.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.csproj.AssemblyReference.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.AssemblyInfoInputs.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.AssemblyInfo.cs
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.csproj.CoreCompileInputs.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets\msbuild.GastroLabApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets\msbuild.build.GastroLabApp.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GastroLabApp.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GastroLabApp.props
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\scopedcss\bundle\GastroLabApp.styles.css
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.csproj.CopyComplete
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\refint\GastroLabApp.dll
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.pdb
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\GastroLabApp.genruntimeconfig.cache
+C:\Users\cpozo\OneDrive\Escritorio\TFG\GastroLab\GastroLab.NetApi\obj\Debug\net6.0\ref\GastroLabApp.dll

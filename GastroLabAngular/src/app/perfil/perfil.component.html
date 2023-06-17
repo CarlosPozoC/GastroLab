@@ -5,5 +5,19 @@
     <p>Nombre: {{ usuario.nombre }}</p>
     <p>Sexo: {{ usuario.sexo }}</p>
   </div>
-</div>
 
+  <div class="opiniones-section">
+    <h3>Opiniones:</h3>
+    <div *ngFor="let opinion of opiniones">
+      <p>Título: {{ opinion.titulo }}</p>
+      <p>Mensaje: {{ opinion.mensaje }}</p>
+    </div>
+  </div>
+
+  <div class="recetas-section">
+    <h3>Recetas:</h3>
+    <div class="receta" *ngFor="let receta of recetas.slice(0, 3)">
+      <img [src]="receta.url" alt="Imagen de la receta" [routerLink]="'/recetas/' + receta.id">
+    </div>
+  </div>
+</div>

@@ -22,13 +22,34 @@
 </div>
 <div class="container opiniones-container">
   <h3>Opiniones:</h3>
+  <button class="boton-crear" (click)="abrirPestanaCreacion()">Crear Opinión</button>
   <ul>
     <li *ngFor="let opinion of opiniones" class="opinion-item">
       <div class="opinion-info">
+        <p><strong>Usuario:</strong> {{ opinion.nombreUsuario }}</p>
         <p><strong>Título:</strong> {{ opinion.titulo }}</p>
         <p><strong>Mensaje:</strong> {{ opinion.mensaje }}</p>
       </div>
     </li>
   </ul>
+</div>
+<div class="creacion-overlay" *ngIf="mostrarPestanaCreacion">
+  <div class="creacion-modal">
+    <h3>Crear Opinion</h3>
+    <form (ngSubmit)="crearOpinion(form)" #form="ngForm">
+      <div class="form-group">
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" name="titulo" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <input type="text" id="mensaje" name="mensaje" ngModel required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Crear</button>
+        <button type="button" (click)="cerrarPestanaCreacion()">Cancelar</button>
+      </div>
+    </form>
+  </div>
 </div>
 

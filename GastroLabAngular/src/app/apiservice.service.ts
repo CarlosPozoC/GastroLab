@@ -49,16 +49,41 @@ export class apiservice {
     return this.http.get<Opinion[]>(`${this.apiUrl}/Receta/Opiniones/${RecetaId}`);
   }
 
+  obtenerOpinionesUsuario(UsuarioId:number): Observable<Opinion[]> {
+    return this.http.get<Opinion[]>(`${this.apiUrl}/Usuario/Opiniones/${UsuarioId}`);
+  }
+
+  obtenerUsuarioOpinion(OpinionId:number): Observable<Usuario> {
+    return this.http.get<Usuario>(`${this.apiUrl}/Opinion/Usuario/${OpinionId}`);
+  }
+
+  obtenerRecetasUsuario(UsuarioId:number): Observable<Receta[]> {
+    return this.http.get<Receta[]>(`${this.apiUrl}/Usuario/Recetas/${UsuarioId}`);
+  }
+
   crearIngrediente(ingrediente: Ingrediente): Observable<any> {
     return this.http.post(`${this.apiUrl}/Ingrediente`, ingrediente);
+  }
+
+  crearOpinion(opinion:any){
+    const url = `${this.apiUrl}/Opinion`;
+    const params = {
+      UsuarioId: opinion.usuarioId,
+      RecetaId: opinion.recetaId
+    };
+    const body = {
+      titulo: opinion.titulo,
+      mensaje: opinion.mensaje
+    };
+    return this.http.post(url, body, { params });
   }
 
   crearReceta(receta: Receta): Observable<any> {
     const url = `${this.apiUrl}/Receta`;
 
     const params = {
-      UsuarioId: receta.usuarioId.toString(),
-      IngredienteId: receta.ingredientesreceta.map(id => id.toString()),
+      UsuarioId: receta.usuarioId,
+      IngredienteId: receta.ingredientesreceta
     };
 
     const body = {
