@@ -5,7 +5,7 @@
 namespace GastroLabApp.Migrations
 {
     /// <inheritdoc />
-    public partial class Initiation : Migration
+    public partial class InitialCreation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,8 @@ namespace GastroLabApp.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Calorias = table.Column<int>(type: "int", nullable: false)
+                    Calorias = table.Column<int>(type: "int", nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -32,7 +33,7 @@ namespace GastroLabApp.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Contraseña = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Contrasena = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sexo = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -49,6 +50,7 @@ namespace GastroLabApp.Migrations
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -81,13 +83,13 @@ namespace GastroLabApp.Migrations
                         column: x => x.recetaId,
                         principalTable: "Recetas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Opiniones_Usuarios_usuarioId",
                         column: x => x.usuarioId,
                         principalTable: "Usuarios",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -114,6 +116,33 @@ namespace GastroLabApp.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Valoraciones",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Valor = table.Column<int>(type: "int", nullable: false),
+                    recetaId = table.Column<int>(type: "int", nullable: false),
+                    usuarioId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Valoraciones", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Valoraciones_Recetas_recetaId",
+                        column: x => x.recetaId,
+                        principalTable: "Recetas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Valoraciones_Usuarios_usuarioId",
+                        column: x => x.usuarioId,
+                        principalTable: "Usuarios",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Opiniones_recetaId",
                 table: "Opiniones",
@@ -133,6 +162,16 @@ namespace GastroLabApp.Migrations
                 name: "IX_RecetasIngredientes_IngredienteId",
                 table: "RecetasIngredientes",
                 column: "IngredienteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Valoraciones_recetaId",
+                table: "Valoraciones",
+                column: "recetaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Valoraciones_usuarioId",
+                table: "Valoraciones",
+                column: "usuarioId");
         }
 
         /// <inheritdoc />
@@ -143,6 +182,9 @@ namespace GastroLabApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "RecetasIngredientes");
+
+            migrationBuilder.DropTable(
+                name: "Valoraciones");
 
             migrationBuilder.DropTable(
                 name: "Ingredientes");

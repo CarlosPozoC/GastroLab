@@ -8,5 +8,6 @@
         public string Sexo { get; set; }
         public ICollection<Receta>? Recetas { get; set; }
         public ICollection<Opinion>? Opiniones { get; set; }
+        public ICollection<Valoracion>? Valoraciones { get; set; }
     }
 }

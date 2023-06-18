@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { apiservice } from '../apiservice.service';
 import { Receta } from '../interfaces/receta.interface';
 import { Router } from '@angular/router';
+import { Valoracion } from '../interfaces/valoracion.interface';
 
 @Component({
   selector: 'app-receta-details',
@@ -17,6 +18,7 @@ export class RecetaDetailsComponent implements OnInit {
   receta!: Receta;
   ingredientes: Ingrediente[] = [];
   opiniones: Opinion[] = [];
+  valoracion: number = 0;
   usuario!:Usuario;
   constructor(
     private route: ActivatedRoute,
@@ -87,12 +89,27 @@ export class RecetaDetailsComponent implements OnInit {
     }
   }
 
+  crearValoracion(valoracion:number):void{
+    if (valoracion) {
+      const nuevaValoracion: any = {
+        valor:valoracion,
+        usuarioId: this.usuario?.id || 0,
+        recetaId: this.receta.id
+      };
+      this.apiservice.crearValoracion(nuevaValoracion).subscribe();
+      this.obtenerReceta(this.receta.id);
+    }
+  }
   abrirPestanaCreacion(): void {
     this.mostrarPestanaCreacion = true;
   }
 
   cerrarPestanaCreacion(): void {
     this.mostrarPestanaCreacion = false;
+  }
+
+  valorar(valor: number): void {
+    this.valoracion = valor;
   }
 
 }

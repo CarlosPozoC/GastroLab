@@ -212,5 +212,24 @@ textarea {
 .boton-crear:active {
   background-color: #3e8e41;
 }
+.valoracion {
+  margin-top: 20px;
+}
+
+.estrellas {
+  display: inline-block;
+}
+
+.estrella {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 24px;
+  color: gold;
+}
+
+
 
 

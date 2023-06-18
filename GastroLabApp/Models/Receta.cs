@@ -9,6 +9,7 @@
         public string Url { get; set; }
         public ICollection<RecetaIngrediente> IngredientesReceta { get; set; }
         public ICollection<Opinion>? Opiniones { get; set; }
+        public ICollection<Valoracion>? Valoraciones { get; set; }
         public Usuario Usuario { get; set; }
 
     }

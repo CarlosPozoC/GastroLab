@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GastroLabApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230524140830_Initiation")]
-    partial class Initiation
+    [Migration("20230618142950_InitialCreation")]
+    partial class InitialCreation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,10 @@ namespace GastroLabApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -99,6 +103,10 @@ namespace GastroLabApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
@@ -132,7 +140,7 @@ namespace GastroLabApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Contraseña")
+                    b.Property<string>("Contrasena")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -147,6 +155,32 @@ namespace GastroLabApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("GastroLabApp.Models.Valoracion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Valor")
+                        .HasColumnType("int");
+
+                    b.Property<int>("recetaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("usuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("recetaId");
+
+                    b.HasIndex("usuarioId");
+
+                    b.ToTable("Valoraciones");
                 });
 
             modelBuilder.Entity("GastroLabApp.Models.Opinion", b =>
@@ -198,6 +232,25 @@ namespace GastroLabApp.Migrations
                     b.Navigation("Receta");
                 });
 
+            modelBuilder.Entity("GastroLabApp.Models.Valoracion", b =>
+                {
+                    b.HasOne("GastroLabApp.Models.Receta", "receta")
+                        .WithMany("Valoraciones")
+                        .HasForeignKey("recetaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GastroLabApp.Models.Usuario", "usuario")
+                        .WithMany("Valoraciones")
+                        .HasForeignKey("usuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("receta");
+
+                    b.Navigation("usuario");
+                });
+
             modelBuilder.Entity("GastroLabApp.Models.Ingrediente", b =>
                 {
                     b.Navigation("RecetasIngrediente");
@@ -208,6 +261,8 @@ namespace GastroLabApp.Migrations
                     b.Navigation("IngredientesReceta");
 
                     b.Navigation("Opiniones");
+
+                    b.Navigation("Valoraciones");
                 });
 
             modelBuilder.Entity("GastroLabApp.Models.Usuario", b =>
@@ -215,6 +270,8 @@ namespace GastroLabApp.Migrations
                     b.Navigation("Opiniones");
 
                     b.Navigation("Recetas");
+
+                    b.Navigation("Valoraciones");
                 });
 #pragma warning restore 612, 618
         }

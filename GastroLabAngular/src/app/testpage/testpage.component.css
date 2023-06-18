@@ -28,3 +28,11 @@
 .text-center {
   text-align: center;
 }
+
+.card img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}

@@ -4,10 +4,11 @@
   <h2 class="text-center">Recetas más votadas:</h2>
 
   <div class="card-container">
-    <div class="card" *ngFor="let item of datos">
+    <div class="card" *ngFor="let item of datos" [routerLink]="'/recetas/' + item.id">
       <h3>{{ item.nombre }}</h3>
       <p>{{ item.descripcion }}</p>
       <p>Tipo: {{ item.tipo }}</p>
+      <img [src]="item.url">
     </div>
   </div>
 </div>

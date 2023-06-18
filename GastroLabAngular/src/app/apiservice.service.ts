@@ -5,6 +5,7 @@ import { Usuario } from './interfaces/usuario.interface';
 import { Receta } from './interfaces/receta.interface';
 import { Ingrediente } from './interfaces/ingrediente.interface';
 import { Opinion } from './interfaces/opinion.interface';
+import { Valoracion } from './interfaces/valoracion.interface';
 @Injectable({
   providedIn: 'root'
 })
@@ -31,6 +32,10 @@ export class apiservice {
 
   obtenerReceta(id:number): Observable<Receta> {
     return this.http.get<Receta>(`${this.apiUrl}/Receta/${id}`);
+  }
+
+  obtenerRecetaValoraciones(id:number): Observable<Valoracion[]> {
+    return this.http.get<Valoracion[]>(`${this.apiUrl}/Valoracion/${id}`);
   }
 
   obtenerIngrediente(id:number): Observable<Ingrediente> {
@@ -74,6 +79,18 @@ export class apiservice {
     const body = {
       titulo: opinion.titulo,
       mensaje: opinion.mensaje
+    };
+    return this.http.post(url, body, { params });
+  }
+
+  crearValoracion(valoracion:any){
+    const url = `${this.apiUrl}/Valoracion`;
+    const params = {
+      UsuarioId: valoracion.usuarioId,
+      RecetaId: valoracion.recetaId
+    };
+    const body = {
+      valor: valoracion.valor,
     };
     return this.http.post(url, body, { params });
   }

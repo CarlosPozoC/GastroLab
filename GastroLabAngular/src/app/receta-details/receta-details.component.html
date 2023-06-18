@@ -6,6 +6,22 @@
     <p>Descripción: {{ receta.descripcion }}</p>
     <img [src]="receta.url" alt="Imagen de la receta">
   </div>
+  <div class="valoracion">
+    <h3>Valoración:</h3>
+    <div class="estrellas">
+      <span
+        class="estrella"
+        *ngFor="let estrella of [1, 2, 3, 4, 5]"
+        (click)="valorar(estrella)"
+      >
+        <i class="fa" [class.fa-star]="estrella <= valoracion"
+           [class.fa-star-o]="estrella > valoracion"></i>
+      </span>
+    </div>
+    <button class="boton-enviar" (click)="crearValoracion(valoracion)">Enviar Valoración</button>
+  </div>
+
+
   <h3>Ingredientes:</h3>
   <ul>
     <li *ngFor="let ingrediente of ingredientes" class="ingrediente-item">

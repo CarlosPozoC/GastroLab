@@ -28,6 +28,7 @@ builder.Services.AddScoped<IRecetaRepository, RecetaRepository>();
 builder.Services.AddScoped<IIngredienteRepository, IngredienteRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IOpinionRepository, OpinionRepository>();
+builder.Services.AddScoped<IValoracionRepository, ValoracionRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>

@@ -83,6 +83,7 @@ export class RecetasComponent implements OnInit {
       this.apiservice.crearReceta(nuevaReceta).subscribe();
       this.cerrarPestanaCreacion();
       this.obtenerRecetas();
+      location.reload();
     }
   }
 }
