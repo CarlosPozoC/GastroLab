@@ -42,16 +42,16 @@ namespace GastroLabApp.Controllers
         }
 
         [HttpGet("{RecetaId}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Valoracion>))]
+        [ProducesResponseType(200, Type = typeof(int))]
         [ProducesResponseType(400)]
         public IActionResult GetValoraciones(int RecetaId)
         {
             if (!recetaRepository.RecetaExist(RecetaId))
                 return NotFound();
-            var valoraciones = mapper.Map<List<ValoracionDto>>(valoracionRepository.GetValoraciones(RecetaId));
+            int valorMedio = (valoracionRepository.GetValoraciones(RecetaId));
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            return Ok(valoraciones);
+            return Ok(valorMedio);
         }
     }
 }

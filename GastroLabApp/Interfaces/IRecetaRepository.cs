@@ -9,7 +9,8 @@ namespace GastroLabApp.Interfaces
         ICollection<Ingrediente> GetIngredientesByReceta(int id);
         ICollection<Opinion> GetOpinionesByReceta(int RecetaId);
         bool CreateReceta(List<int> IngredienteId, Receta receta);
-        bool UpdateReceta(Receta receta);
+        bool UpdateReceta(Receta receta, List<int> IngredienteId);
+        bool DeleteReceta(int recetaId);
         bool RecetaExist(int id);
         bool Save();
     }

@@ -14,6 +14,8 @@ import { RecetasComponent } from './recetas/recetas.component';
 import { IngredientesComponent } from './ingredientes/ingredientes.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { RecetaDetailsComponent } from './receta-details/receta-details.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 // Importa otros componentes si es necesario
 
@@ -36,7 +38,8 @@ import { RecetaDetailsComponent } from './receta-details/receta-details.componen
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule    // Asegúrate de que AppRoutingModule esté importado aquí
+    RouterModule,
+    CarouselModule.forRoot()   // Asegúrate de que AppRoutingModule esté importado aquí
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -34,8 +34,8 @@ export class apiservice {
     return this.http.get<Receta>(`${this.apiUrl}/Receta/${id}`);
   }
 
-  obtenerRecetaValoraciones(id:number): Observable<Valoracion[]> {
-    return this.http.get<Valoracion[]>(`${this.apiUrl}/Valoracion/${id}`);
+  obtenerRecetaValoraciones(id:number): Observable<number> {
+    return this.http.get<number>(`${this.apiUrl}/Valoracion/${id}`);
   }
 
   obtenerIngrediente(id:number): Observable<Ingrediente> {

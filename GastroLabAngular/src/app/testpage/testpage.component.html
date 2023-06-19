@@ -1,16 +1,56 @@
 <app-navbar></app-navbar>
-
+<section class="portada">
+  <carousel>
+    <slide *ngFor="let imagen of imagenes">
+      <img [src]="imagen" alt="Imagen de portada">
+    </slide>
+  </carousel>
+</section>
 <div *ngIf="datos" class="container">
-  <h2 class="text-center">Recetas más votadas:</h2>
+  <h2 class="text-center">Top 3 mejores recetas:</h2>
 
   <div class="card-container">
     <div class="card" *ngFor="let item of datos" [routerLink]="'/recetas/' + item.id">
       <h3>{{ item.nombre }}</h3>
       <p>{{ item.descripcion }}</p>
       <p>Tipo: {{ item.tipo }}</p>
+      <p><span [innerHTML]="getValoracionMediaStars(item.ValoracionMedia)"></span></p>
       <img [src]="item.url">
     </div>
   </div>
+  <hr> <!-- Divider -->
+
+  <h2 class="text-center">Recetas más sencillas:</h2>
+  <div class="card-container">
+    <div *ngFor="let item of datos" [routerLink]="'/recetas/' + item.id">
+      <ng-container *ngIf="item.tipo === 'Sencilla'">
+        <div class="card">
+          <h3>{{ item.nombre }}</h3>
+          <p>{{ item.descripcion }}</p>
+          <p>Tipo: {{ item.tipo }}</p>
+          <p><span [innerHTML]="getValoracionMediaStars(item.ValoracionMedia)"></span></p>
+          <img [src]="item.url">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <hr> <!-- Divider -->
+
+  <h2 class="text-center">Recetas más saludables:</h2>
+  <div class="card-container">
+    <div *ngFor="let item of datos" [routerLink]="'/recetas/' + item.id">
+      <ng-container *ngIf="item.tipo === 'Saludable'">
+        <div class="card">
+          <h3>{{ item.nombre }}</h3>
+          <p>{{ item.descripcion }}</p>
+          <p>Tipo: {{ item.tipo }}</p>
+          <p><span [innerHTML]="getValoracionMediaStars(item.ValoracionMedia)"></span></p>
+          <img [src]="item.url">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <hr> <!-- Divider -->
 </div>
 
 <router-outlet></router-outlet>

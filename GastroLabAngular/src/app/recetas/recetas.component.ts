@@ -15,6 +15,11 @@ export class RecetasComponent implements OnInit {
   mostrarPestanaCreacion = false;
   usuario: Usuario | null = null;
   ingredientes: Ingrediente[] = [];
+  filtroNombre: string = '';
+  recetasFiltradas: Receta[] = [];
+  recetasOriginales: Receta[] = [];
+
+
 
   constructor(private apiservice: apiservice, private router: Router) {}
 
@@ -33,7 +38,8 @@ export class RecetasComponent implements OnInit {
   obtenerRecetas(): void {
     this.apiservice.obtenerRecetas().subscribe(
       (data: Receta[]) => {
-        this.recetas = data;
+        this.recetasOriginales = data;
+        this.recetasFiltradas = [...this.recetasOriginales];
       },
       (error: any) => {
         console.error('Error al obtener las recetas:', error);
@@ -85,5 +91,18 @@ export class RecetasComponent implements OnInit {
       this.obtenerRecetas();
       location.reload();
     }
+  }
+
+  filtrarRecetas(): void {
+    this.recetasFiltradas = this.recetasOriginales.filter(receta => {
+      const nombreCoincide = receta.nombre.toLowerCase().includes(this.filtroNombre.toLowerCase());
+      const tipoCoincide = receta.tipo.toLowerCase().includes(this.filtroNombre.toLowerCase());
+      return nombreCoincide || tipoCoincide;
+    });
+  }
+
+  limpiarFiltros(): void {
+    this.filtroNombre = '';
+    this.recetasFiltradas = [...this.recetasOriginales];
   }
 }

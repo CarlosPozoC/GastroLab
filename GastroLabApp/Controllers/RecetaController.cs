@@ -77,7 +77,7 @@ namespace GastroLabApp.Controllers
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
 
-        public IActionResult UpdateReceta(int RecetaId, [FromBody] RecetaDto updatedReceta) 
+        public IActionResult UpdateReceta(int RecetaId, [FromQuery] List<int> IngredienteId, [FromBody] RecetaDto updatedReceta) 
         {
             if(updatedReceta==null)
                 return BadRequest(ModelState);
@@ -88,7 +88,7 @@ namespace GastroLabApp.Controllers
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
             var recetaMap = mapper.Map<Receta>(updatedReceta);
-            if (!recetaRepository.UpdateReceta(recetaMap))
+            if (!recetaRepository.UpdateReceta(recetaMap, IngredienteId))
             {
                 ModelState.AddModelError("", "Algo a ido mal updateando la receta");
                 return StatusCode(500, ModelState);
@@ -96,6 +96,19 @@ namespace GastroLabApp.Controllers
             return NoContent();
         }
 
+        [HttpDelete("{RecetaId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        public IActionResult DeleteReceta(int RecetaId)
+        {
+            if (!recetaRepository.DeleteReceta(RecetaId))
+            {
+                ModelState.AddModelError("", "Algo a ido mal borrando la receta");
+                return StatusCode(500, ModelState);
+            }
+            return NoContent();
+        }
         [HttpPost]
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]

@@ -36,3 +36,40 @@
   margin: 0 auto 10px;
   border-radius: 50%;
 }
+.card-container .card .rating-stars {
+  color: #fcd44a;
+  font-size: 20px;
+}
+
+.card-container .card .rating-stars-empty {
+  color: #c4c4c4;
+  font-size: 20px;
+}
+.portada img {
+  width: 1000px;
+  height: 800px;
+  object-fit: cover;
+  align-self: center;
+}
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.carousel {
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 80%;
+  height: auto;
+}
+

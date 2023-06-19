@@ -28,9 +28,21 @@ namespace GastroLabApp.Repository
             var saved = context.SaveChanges();
             return saved > 0 ? true : false;
         }
-        public ICollection<Valoracion> GetValoraciones(int RecetaId)
+        public int GetValoraciones(int RecetaId)
         {
-            return context.Valoraciones.Where(v => v.receta.Id == RecetaId).ToList();
+            IEnumerable<Valoracion> valoraciones= context.Valoraciones.Where(v => v.receta.Id == RecetaId).ToList();
+            int sumatorio = 0;
+            if (valoraciones != null && valoraciones.Count()>0)
+            {
+                foreach (Valoracion valoracion in valoraciones)
+                {
+                    sumatorio += valoracion.Valor;
+                }
+                int valorMedio = sumatorio / valoraciones.Count();
+                return valorMedio;
+            }
+            return 0;
+            
         }
     }
 }

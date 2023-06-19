@@ -1,8 +1,10 @@
 ﻿using GastroLabApp.Data;
+using GastroLabApp.Dto;
 using GastroLabApp.Interfaces;
 using GastroLabApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.OpenApi.Any;
 
 namespace GastroLabApp.Repository
 {
@@ -34,9 +36,36 @@ namespace GastroLabApp.Repository
             return context.Opiniones.Where(re => re.receta.Id == RecetaId).ToList();
         }
 
-        public bool UpdateReceta(Receta receta)
+        public bool UpdateReceta(Receta receta, List<int> IngredienteId)
         {
+            List<RecetaIngrediente> recetaIngredientes = context.RecetasIngredientes.Where(r => r.RecetaId == receta.Id).ToList();
+            foreach (RecetaIngrediente recetaIngrediente in recetaIngredientes)
+            {
+                context.Remove(recetaIngrediente);
+            }
+            foreach (int Id in IngredienteId)
+            {
+                var ingredienteEntity = context.Ingredientes.Where(i => i.Id == Id).FirstOrDefault();
+                var RecetaIngrediente = new RecetaIngrediente()
+                {
+                    Receta = receta,
+                    Ingrediente = ingredienteEntity
+                };
+                context.Update(RecetaIngrediente);
+            }
             context.Update(receta);
+            return Save();
+        }
+
+        public bool DeleteReceta(int RecetaId)
+        {
+            Receta receta= context.Recetas.Where(r => r.Id == RecetaId).FirstOrDefault();
+            List<RecetaIngrediente> recetaIngredientes = context.RecetasIngredientes.Where(r => r.RecetaId == RecetaId).ToList();
+            foreach (RecetaIngrediente recetaIngrediente in recetaIngredientes)
+            {
+                context.Remove(recetaIngrediente);
+            }
+            context.Remove(receta);
             return Save();
         }
         public bool RecetaExist(int RecetaId)

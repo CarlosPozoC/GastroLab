@@ -12,11 +12,14 @@
 
 <div class="container">
   <h2>Recetas</h2>
-
+  <div class="busqueda">
+    <label for="nombre">Buscador:</label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="filtroNombre" (input)="filtrarRecetas()">
+  </div>
   <button class="btn-create" (click)="abrirPestanaCreacion()">Crear Receta</button>
 
   <div class="card-container">
-    <div class="card no-underline" *ngFor="let receta of recetas" [routerLink]="'/recetas/' + receta.id">
+    <div class="card no-underline" *ngFor="let receta of recetasFiltradas" [routerLink]="'/recetas/' + receta.id">
       <h3>{{ receta.nombre }}</h3>
       <p>Tipo: {{ receta.tipo }}</p>
       <p>Descripción: {{ receta.descripcion }}</p>
