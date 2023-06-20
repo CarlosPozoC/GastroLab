@@ -13,11 +13,7 @@ import { Usuario } from '../interfaces/usuario.interface';
 export class TestpageComponent implements OnInit {
   usuario: Usuario | null = null;
   datos: Receta[]=[];
-  imagenes: string[] = [
-    'https://i.blogs.es/87930e/comidas-ricas/1366_2000.jpg',
-    'https://i.blogs.es/206d25/patatas/1366_2000.jpg',
-    'https://i.blogs.es/a34919/puerros2/1366_2000.jpg'
-  ];
+  imagenes: string[] = [];
 
   constructor(private apiservice: apiservice, private router: Router) {}
 
@@ -27,6 +23,7 @@ export class TestpageComponent implements OnInit {
         this.datos = data;
         this.asignarValoracionMedia();
         this.ordenarPorValoracionMedia();
+        this.generarImagenesAleatorias();
         console.log(data);
       },
       (error) => {
@@ -63,6 +60,13 @@ export class TestpageComponent implements OnInit {
   ordenarPorValoracionMedia(): void {
     this.datos.sort((a, b) => b.ValoracionMedia - a.ValoracionMedia);
     this.datos = this.datos.slice(0, 3);
+  }
+  generarImagenesAleatorias(): void {
+    const maxIndex = this.datos.length - 1;
+    for (let i = 0; i < 3; i++) {
+      const randomIndex = Math.floor(Math.random() * (maxIndex + 1));
+      this.imagenes[i] = this.datos[randomIndex].url;
+    }
   }
 
 }
