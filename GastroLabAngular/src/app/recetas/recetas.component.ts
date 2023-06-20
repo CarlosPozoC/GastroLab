@@ -69,6 +69,7 @@ export class RecetasComponent implements OnInit {
 
   cerrarPestanaCreacion(): void {
     this.mostrarPestanaCreacion = false;
+    location.reload();
   }
 
   crearReceta(form: any): void {
@@ -87,9 +88,8 @@ export class RecetasComponent implements OnInit {
       };
 
       this.apiservice.crearReceta(nuevaReceta).subscribe();
-      this.cerrarPestanaCreacion();
       this.obtenerRecetas();
-      location.reload();
+      this.cerrarPestanaCreacion();
     }
   }
 

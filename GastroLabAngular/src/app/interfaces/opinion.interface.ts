@@ -5,4 +5,5 @@ export interface Opinion {
   receta: number;
   usuario: number;
   nombreUsuario: string;
+  mostrarOpinion:boolean;
 }

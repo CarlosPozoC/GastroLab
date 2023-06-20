@@ -229,6 +229,42 @@ textarea {
   font-size: 24px;
   color: gold;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
+
+.overlay.darken {
+  visibility: visible;
+  opacity: 1;
+}
+
+.formulario-actualizacion {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.boton-cancelar {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
 
 

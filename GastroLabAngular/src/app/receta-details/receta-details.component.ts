@@ -15,11 +15,17 @@ import { Valoracion } from '../interfaces/valoracion.interface';
 })
 export class RecetaDetailsComponent implements OnInit {
   mostrarPestanaCreacion = false;
+  mostrarBotones=false;
   receta!: Receta;
   ingredientes: Ingrediente[] = [];
+  ingredientesTotal: Ingrediente[] =[];
   opiniones: Opinion[] = [];
   valoracion: number = 0;
   usuario!:Usuario;
+  mostrarFormulario = false;
+  recetasUsuario: Receta[]=[];
+  opinionesUsuario: Opinion[]=[];
+
   constructor(
     private route: ActivatedRoute,
     private apiservice: apiservice,
@@ -38,6 +44,10 @@ export class RecetaDetailsComponent implements OnInit {
     if (recetaId) {
       this.obtenerReceta(recetaId);
     }
+    this.obtenerIngredientes();
+    if (this.usuario) {
+      this.obtenerRecetas(this.usuario.id);
+    }
   }
 
   obtenerReceta(id: number): void {
@@ -53,6 +63,7 @@ export class RecetaDetailsComponent implements OnInit {
           (opiniones: Opinion[]) => {
             this.opiniones = opiniones;
             this.asignarNombreUsuarioOpiniones();
+            this.verificarOpiniones();
           }
         );
 
@@ -68,6 +79,14 @@ export class RecetaDetailsComponent implements OnInit {
       this.apiservice.obtenerUsuarioOpinion(opinion.id).subscribe(
         (usuario: Usuario) => {
           opinion.nombreUsuario = usuario.nombre;
+        },
+        (error: any) => {
+          console.error('Error al obtener el usuario de la opinión:', error);
+        }
+      );
+      this.apiservice.obtenerOpinionesUsuario(this.usuario.id).subscribe(
+        (opiniones: Opinion[]) => {
+          this.opinionesUsuario = opiniones;
         },
         (error: any) => {
           console.error('Error al obtener el usuario de la opinión:', error);
@@ -112,4 +131,82 @@ export class RecetaDetailsComponent implements OnInit {
     this.valoracion = valor;
   }
 
+  actualizarReceta(form: any) {
+    const ingredientesSeleccionados = this.ingredientesTotal.filter(ingrediente => form.value[ingrediente.id]);
+    const ingredientesIds = ingredientesSeleccionados.map(ingrediente => ingrediente.id);
+    const nuevaReceta: any = {
+      id:this.receta.id,
+      nombre: form.value.nombre,
+      descripcion: form.value.descripcion,
+      tipo: form.value.tipo,
+      url: form.value.url,
+      ingredientesreceta: ingredientesIds
+    }
+    this.apiservice.updateReceta(nuevaReceta).subscribe();
+    this.obtenerReceta(this.receta.id);
+  }
+  deleteReceta(){
+    this.apiservice.deleteReceta(this.receta.id).subscribe();
+    this.router.navigate(['/recetas']);
+  }
+
+  deleteOpinion(opinionid:number){
+    this.apiservice.deleteOpinion(opinionid).subscribe();
+    location.reload();
+  }
+
+  abrirFormulario() {
+    this.mostrarFormulario = true;
+  }
+
+  cerrarFormulario() {
+    this.mostrarFormulario = false;
+  }
+
+  obtenerIngredientes(): void {
+    this.apiservice.obtenerIngredientes().subscribe(
+      (data: Ingrediente[]) => {
+        this.ingredientesTotal = data;
+      },
+      (error: any) => {
+        console.error('Error al obtener los ingredientes:', error);
+      }
+    );
+  }
+
+  confirmarBorrado(): void {
+    if (window.confirm('¿Estás seguro de borrar la receta?')) {
+      this.deleteReceta();
+    }
+  }
+
+  confirmarBorrado2(opinionid:number): void {
+    if (window.confirm('¿Estás seguro de borrar la receta?')) {
+      this.deleteOpinion(opinionid);
+    }
+  }
+
+  obtenerRecetas(UsuarioId: number): void {
+    this.apiservice.obtenerRecetasUsuario(UsuarioId).subscribe(
+      (recetas: Receta[]) => {
+        this.recetasUsuario = recetas;
+        this.verificarRecetaActual();
+      }
+    );
+  }
+
+  verificarRecetaActual(): void {
+    if (this.recetasUsuario.some(receta => receta.id === this.receta.id)) {
+      this.mostrarBotones = true;
+    } else {
+      this.mostrarBotones = false;
+    }
+  }
+
+  verificarOpiniones(): void {
+    this.opiniones.forEach(opinion => {
+      const coincidente = this.opinionesUsuario.some(opinionUsuario => opinionUsuario.id === opinion.id);
+      opinion.mostrarOpinion = coincidente;
+    });
+  }
 }

@@ -113,5 +113,28 @@ export class apiservice {
     return this.http.post(url, body, { params });
   }
 
+  updateReceta(receta: any): Observable<any> {
+    const url = `${this.apiUrl}/Receta/${receta.id}`;
+    const params = {
+      IngredienteId: receta.ingredientesreceta
+    };
 
+    const body = {
+      id: receta.id,
+      nombre: receta.nombre,
+      descripcion: receta.descripcion,
+      tipo: receta.tipo,
+      url: receta.url
+    };
+
+    return this.http.put(url, body, { params });
+  }
+  deleteReceta(recetaid: number): Observable<any> {
+    const url = `${this.apiUrl}/Receta/${recetaid}`;
+    return this.http.delete(url);
+  }
+  deleteOpinion(opinionid: number): Observable<any> {
+    const url = `${this.apiUrl}/Opinion/${opinionid}`;
+    return this.http.delete(url);
+  }
 }

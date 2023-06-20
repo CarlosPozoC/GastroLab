@@ -61,9 +61,19 @@ namespace GastroLabApp.Repository
         {
             Receta receta= context.Recetas.Where(r => r.Id == RecetaId).FirstOrDefault();
             List<RecetaIngrediente> recetaIngredientes = context.RecetasIngredientes.Where(r => r.RecetaId == RecetaId).ToList();
+            List<Valoracion> valoracionesReceta = context.Recetas.Include(r => r.Valoraciones).Where(r => r.Id == RecetaId).SelectMany(r => r.Valoraciones).ToList();
+            List<Opinion> opinionesReceta = context.Recetas.Include(r => r.Opiniones).Where(r => r.Id == RecetaId).SelectMany(r => r.Opiniones).ToList();
             foreach (RecetaIngrediente recetaIngrediente in recetaIngredientes)
             {
                 context.Remove(recetaIngrediente);
+            }
+            foreach(Valoracion valoracion in valoracionesReceta)
+            {
+                context.Remove(valoracion);
+            }
+            foreach (Opinion opinion in opinionesReceta)
+            {
+                context.Remove(opinion);
             }
             context.Remove(receta);
             return Save();

@@ -1,5 +1,7 @@
 <app-navbar></app-navbar>
 <div class="container" *ngIf="receta">
+  <button class="boton-actualizar" style="background-color: yellow; margin-right: 10px;" (click)="abrirFormulario()" *ngIf="mostrarBotones">Actualizar Receta</button>
+  <button class="boton-borrar" style="background-color: red;" (click)="confirmarBorrado()" *ngIf="mostrarBotones">Borrar Receta</button>
   <div class="receta">
     <h2>{{ receta.nombre }}</h2>
     <p>Tipo: {{ receta.tipo }}</p>
@@ -45,6 +47,7 @@
         <p><strong>Usuario:</strong> {{ opinion.nombreUsuario }}</p>
         <p><strong>Título:</strong> {{ opinion.titulo }}</p>
         <p><strong>Mensaje:</strong> {{ opinion.mensaje }}</p>
+        <button class="boton-borrar" style="background-color: red;" (click)="confirmarBorrado2(opinion.id)" *ngIf="opinion.mostrarOpinion">Borrar Opinion</button>
       </div>
     </li>
   </ul>
@@ -68,4 +71,32 @@
     </form>
   </div>
 </div>
+<div class="overlay" [class.darken]="mostrarFormulario">
+  <div class="formulario-actualizacion" *ngIf="mostrarFormulario">
+    <h3>Actualizar Receta</h3>
+    <form (ngSubmit)="actualizarReceta(form)" #form="ngForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="form.value.nombre" required>
 
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" [(ngModel)]="form.value.descripcion" required></textarea>
+
+      <label for="tipo">Tipo:</label>
+      <input type="text" id="tipo" name="tipo" [(ngModel)]="form.value.tipo" required>
+
+      <label for="url">URL:</label>
+      <input type="text" id="url" name="url" [(ngModel)]="form.value.url" required>
+
+      <label for="ingredientes">Ingredientes:</label>
+      <div *ngFor="let ingrediente of ingredientesTotal">
+        <input type="checkbox" id="{{ ingrediente.id }}" name="{{ ingrediente.id }}" [(ngModel)]="form.value[ingrediente.id]">
+        <label for="{{ ingrediente.id }}">{{ ingrediente.nombre }}</label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Actualizar</button>
+        <button type="button" (click)="cerrarFormulario()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

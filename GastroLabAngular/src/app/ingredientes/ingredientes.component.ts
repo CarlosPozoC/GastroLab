@@ -35,6 +35,7 @@ export class IngredientesComponent implements OnInit {
 
   cerrarPestanaCreacion(): void {
     this.mostrarPestanaCreacion = false;
+    location.reload();
   }
 
   crearIngrediente(form: any): void {
@@ -46,11 +47,8 @@ export class IngredientesComponent implements OnInit {
         url: form.value.url
       };
       this.apiservice.crearIngrediente(nuevoIngrediente).subscribe()
+      this.obtenerIngredientes();
       this.cerrarPestanaCreacion();
-      this.obtenerIngredientes();
-      location.reload();
-      this.obtenerIngredientes();
-      location.reload();
     }
   }
 }
